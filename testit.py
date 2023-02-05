@@ -1,4 +1,6 @@
 import shared as sh
+import pytest
+
 sh.afunction()
 
 def test_multi_spaces():
@@ -28,3 +30,8 @@ def test_assert_bool():
 
     assert "Expected str but got" in str(exc_mssg)
     assert "bool" in str(exc_mssg)
+
+test_multi_spaces()
+test_multi_lines()
+test_assert_int()
+test_assert_bool()  
