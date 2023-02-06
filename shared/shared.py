@@ -21,5 +21,12 @@ def space_compress(stocomp):
     comp = re.sub(r'\s+', ' ', stocomp)
     return comp.strip()
 
-def new_func():
-    pass
+def square_func(value):
+    """
+    INPUTS:
+    value   int value to be squared
+    RETURNS:
+    square squared int value
+    """
+    assert isinstance(value, int), "Expected int but got {} instead".format(type(value))
+    return value ** 2
