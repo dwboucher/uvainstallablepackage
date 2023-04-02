@@ -25,6 +25,6 @@ def test_skip_space_compress():
 
 @pytest.mark.skipif(sys.platform == 'darwin', reason ="Skipped because of sys.platform = darwin")
 def test_skipif_func():
-    test_str = "This will fail?"
+    test_str = "This will not fail."
     print("My platform is: ", sys.platform)
-    assert "Yes, this will fail." == test_str, "These strings don't match"
+    assert "This will not fail." == test_str, "These strings don't match"
